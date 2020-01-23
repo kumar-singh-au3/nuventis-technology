@@ -15,14 +15,12 @@ class Albums extends Component {
 
     render() {
         const {albums, loading} = this.props;
-    console.log("userid" , this.props.match.params.userId)
         const albumList = albums.map((album,i)=><List>
             <h3>
               {i+1}.  {album.title}
             </h3>
             </List>
         )
-
         return (
             <Loader loading={albums.length}>
           <Layout title="Albums">

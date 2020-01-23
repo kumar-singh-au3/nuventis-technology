@@ -31,7 +31,6 @@ class Users extends Component {
             
             </List>
         )
-       console.log("Users : ", users,userList, users instanceof Array);
        return <Loader loading={users.length}>
          <h2 className="header">Users</h2>
         {userList}

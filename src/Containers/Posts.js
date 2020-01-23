@@ -12,10 +12,8 @@ class Post extends Component {
     componentDidMount(){
         this.props.fetchPosts(this.props.match.params.userId);
     }
-
     render() {
         const {posts, loading} = this.props;
-    console.log("userid" , this.props.match.params.userId)
         const postList = posts.map((post,i)=><List>
             <h3>
             {i+1}. {post.title}
